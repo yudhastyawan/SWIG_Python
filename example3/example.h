@@ -13,4 +13,5 @@ class List {
         int getter();
 };
 
+std::vector<double> operator+(std::vector<double> &a, std::vector<double> &b); // cannot be used
 #endif
