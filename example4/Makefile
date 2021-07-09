@@ -10,7 +10,7 @@ ${MODNAME}_wrap.o: ${MODNAME}_wrap.c
 ${MODNAME}_wrap.c: ${MODNAME}.i
 	swig -python -globals CONSTANTS ${MODNAME}.i
 
-${MODNAME}.o: ${MODNAME}.c
+${MODNAME}.o: ${MODNAME}.cxx
 	gcc -O2 -fPIC -c ${MODNAME}.c
 
 clean:
